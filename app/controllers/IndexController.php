@@ -1,15 +1,16 @@
 <?php
 
-use TinyURL\Repository\LinkRepository;
+use TinyURL\Repository\Link\LinkRepositoryInterface;
 
 class IndexController extends BaseController
 {
     protected $linkRepo;
         
 
-    public function __construct(LinkRepository $linkRepo)
+    public function __construct(LinkRepositoryInterface $linkRepo)
     {
         $this->linkRepo = $linkRepo;
+        $this->beforeFilter('auth');
     }
 
     public function  showIndex()
