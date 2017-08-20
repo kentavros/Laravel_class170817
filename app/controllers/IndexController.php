@@ -13,7 +13,7 @@ class IndexController extends BaseController
         $this->beforeFilter('auth');
     }
 
-    public function  showIndex()
+    public function  showIndex($user =1)
     {
         return View::make('index.index');
 

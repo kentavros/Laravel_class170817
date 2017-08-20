@@ -26,7 +26,8 @@ return array(
 	|
 	*/
 
-	'url' => 'http://192.168.0.15/~user6/tinyurl/',
+	//'url' => 'http://192.168.0.15/~user6/tinyurl/',
+	'url' => 'http://laravel/Laravel_class170817/Laravel_class170817/',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -122,6 +123,7 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
         'TinyURL\Repository\TinyURLRepositoryProvider',
+        'TinyURL\Repository\TinyUserRepositoryProvider'
 	),
 
 	/*
